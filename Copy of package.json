@@ -13,9 +13,11 @@
     "firebase": "3.7.0",
     "firebase-admin": "^4.1.2",
     "google-cloud": "^0.49.0",
-    "googleapis": ">=0.0.0",
     "materialize-clockpicker": "^1.0.1",
-    "mysql": "^2.15.0",
-    "pusher": ">=0.0.0"
+     "mysql": ">=0.0.0",
+     "pusher": ">=0.0.0",
+     "googleapis": ">=0.0.0"
+
+    
   }
 }
