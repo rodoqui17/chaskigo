@@ -36,6 +36,9 @@ const connection = mysql.createConnection({
    port: 3306
 });
 
+var EmailCtrl = require('./ckaskigo/mailCtrl');
+//email route
+restService.post('/email', EmailCtrl.sendEmail);
 
 restService.get('/data',function(req,res){
 
