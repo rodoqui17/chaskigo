@@ -19,19 +19,15 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-// firebase.initializeApp({
-//   credential: firebase.credential.cert("My First App-61c04ffb88bc.json"),
-//   databaseURL: "https://blinding-heat-3569.firebaseio.com"
-  
-// });
+
 
 
 const connection = mysql.createConnection({
-    host: '104.198.78.47',
-   //host: 'localhost',
+    host: '',
+   host: 'localhost',
    user: 'root',
-   password: 'MUW51KLs',
-   //password: 'R0d0qu11783',
+   password: '',
+   //password: '',
    database: 'test',
    port: 3306
 });
@@ -53,64 +49,6 @@ connection.connect(function(error){
 connection.end();
 });
 
-//firebase.initializeApp({
-//  serviceAccount: {
-//    projectId: "blinding-heat-3569",
-//    clientEmail: "firebasedb@blinding-heat-3569.iam.gserviceaccount.com",
-//    privateKey: "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCm0vkC1EwmHDzo\n3YtKnDxiTXLNR+A4gwnk43SPAeYoeR0sU3eAB0WWoRi0hzRVcuOiQ791cYmWi0tX\npKq9BHk+TkkZw759PgIhy4p4tyBTgo/Cf/xVRxAR35eja9A9nvNg+KjKRqUofEYs\n1RZ8+x0c60BGuDVoaKAUa4Atraw+QJzo1hEXeNcGptsm9Wd3Qvc5eBDyBUoIfE/A\nrQOK/ozegcQUimW4rIn21KGQ9Nl54Mk4IFcalVn8NPTxCRzzBS2yVgt5oQqDGAj1\nz5loq31Mtuf6cPj9NGHAKJXCNDFOM1K/II6hTfWua2Ah/3ro7/rKSF+sKs/PCK5O\nwfJ2H8IFAgMBAAECggEABRnma2O6gF/UrPo5TCrC3e6oWAaeoJvBLbKW2dihBRPP\nBI/4031lb1m1u692tjYxJ8ESlbDHGEdiImfyoJ0GaBVUvujxZjsDLa1fqplO777K\nTpRDTwhBQYqoxGKDl57IqmpwHt9SJY7HRo+thFzZYwz+hisT1wF8A6PV44+v+KdM\ngJ48UQuJtf/2TmN4NdAt05GtDLHQW3V6vC9sLBxCwOlBbOeXQ703kzo5kzcf//FM\ndrEbfFRIXb/ACX3OIYmxcJZZ9z30PLLNX4QGzxcf4vMrpvh5PWJ60u8J4lmhytON\ngRgQPDi9kbqQIB/C0k/TxUAkwwSwDbrJ/du4JYGsgQKBgQDTplkp5zjrZZu0lFNX\nQAIUEfhUowSlzGc9NTS4QtJ27lI2tECpSn9HrOoFKVwuw/s1bbb/vpwGCTz8Ad7E\nnkq0DAmKzo9ZSAufvI/+SOBr2Jw6chyi8/w2dqCqtVf/kaBuWtRXCQQ+g8FjKGJT\n/htszR6CpSt012m0qqd2rOJneQKBgQDJyAOuj9I4FE+VJ5yfIDWxHFIt9DGPogsV\nZeSTY7WvFPmZ3+cYffSgw0ydwO2W5sjpIA4b5v1TsIbRbinh3jQ38/6B/2QGvHLa\nXVlebjyi0TkBDzYpV/IjcSY3hQB0nb5IdftQFd0ozKCNv+NKa8T1lGyLYL6UZiPd\ndF0qYkzv7QKBgA5YZg67B1adKnKQ4x00z29A0I4cBoKeWhkB9DLRBKbe/F+M1B0l\nWX8oLyxuYzsgOXSjnRW0e6rFEYcbMVguSm3tqu/nlDu+8FrBUxkvI1br9ZrYhSxe\nUSf33mfzpqVB35fbPC0yBUGfeIoaAKAkxwMW3AyK2Wkv+JAwSO14RlgxAoGAJ8ql\nzzrVffGjcAqLvGWhsPegzScmzuhpvyKE3PwAzDIattmMvSu5niplZYayU9vXKwID\nRkVbF7HsJEjRQZWMPqyDOCehFiL7k0xtX03l70XLNAZH7AdH3O1nV/OGj3i8GZYK\npVRqdK1FzC5XKEnwYW2Pqjy92I377KQR61XPTlECgYBkUNBJ8aExbAPOyldZ94c6\nuT0dTyOyPZTtt2mUWt40oKw02c6R0q+6UIrYT5sPDO8yjvkWKrvDacTohum3LJyc\nGZYlNpvsHpCQ88d2XVL8E/p/QJ/7TPjV3UCpQOzOhkMozsrYYPt4u25ZfvJr90x6\napD/E5Hz9I5CBQWXqYhQTA==\n-----END PRIVATE KEY-----\n"
-//  },
-//  databaseURL: "https://blinding-heat-3569.firebaseio.com/"
-//});
-
-    
-  //conexion Mysql
- 
-// var mysql      = require('mysql');
-//var connection = mysql.createConnection({
-//  host     : 'localhost',
-//  user     : 'me',
-//  password : 'secret',
-// 
-//});
-//
-//connection.connect();
-//
-//connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-//  if (error) throw error;
-//  console.log('The solution is: ', results[0].solution);
-//});
-//
-//connection.end();
-
-//restService.get('/consulta', function(req, res){
-//	
-////	"GCLOUD_PROJECT": "[YOUR_PROJECT_ID]",
-////  "DATA_BACKEND": "cloudsql",
-////  "MYSQL_USER": "[YOUR_MYSQL_USERNAME]",
-////  "MYSQL_PASSWORD": "[YOUR_MYSQL_PASSWORD]",
-////  "INSTANCE_CONNECTION_NAME": "[YOUR_INSTANCE_CONNECTION_NAME]"
-////  
-//connection.connect();
-// 
-//connection.query('SELECT * FROM usuarios' ,function (error, results, fields) {
-//  if (error) {
-//  	console.log(error);
-//  }
-//    else{
-//    	  console.log('Total de resultados: ' + results.length);
-//  console.log('Total de campos devueltos: ' + fields.length);
-//    for (var i = 0; i < results.length; i++) {
-//    console.log('nombres: ', results[i].usuarioscol+'  '+'fechas:',results[i].usuarioscol1);
-//	res.send(JSON.stringify({ a: results.length }));
-//
-//  }
-//    }
-//
-//
-//});
-//
-////connection.end();
-//});
 restService.use(bodyParser.urlencoded({
     extended: true
 }));
