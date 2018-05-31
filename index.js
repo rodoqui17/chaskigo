@@ -19,7 +19,7 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-var EmailCtrl = require('./chaskigo/mailCtrl');
+var EmailCtrl = require('mailCtrl');
 //email route
 restService.post('/emailsend', EmailCtrl.sendEmail);
 
