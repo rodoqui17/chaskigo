@@ -23,16 +23,16 @@ restService.use(bodyParser.json());
 
 
 const connection = mysql.createConnection({
-    host: '',
+   // host: '',
    host: 'localhost',
    user: 'root',
-   password: '',
+   //password: '',
    //password: '',
    database: 'test',
    port: 3306
 });
 
-var EmailCtrl = require('./ckaskigo/mailCtrl');
+var EmailCtrl = require('./chaskigo/mailCtrl');
 //email route
 restService.post('/email', EmailCtrl.sendEmail);
 
