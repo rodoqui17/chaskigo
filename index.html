@@ -42,17 +42,17 @@
             <h1 class="mb-5">ahora tus pedidos lo realizamos nosotros</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form method = "post" action="mailto:chaski.go.bo@gemail.com">
+            <form">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
                   
-                  <input type="email" class="form-control form-control-lg" placeholder="Ingresa tu email para descargar la aplicación...">
+                  <input type="email" id="mail" class="form-control form-control-lg" placeholder="Ingresa tu email para descargar la aplicación...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <input type="submit" value="send" class="btn btn-block btn-lg btn-primary" on-click="mensaje()">Enviar</button>
+                  <input type="submit" value="send" class="btn btn-block btn-lg btn-primary" on-click="mensaje(id)">Enviar</button>
                   <script>
-                  function mensaje(){
-                  alert("mensaje enviado");
+                  function mensaje(id){
+                  alert("mensaje enviado por "+ id);
                   }
                   </script>
                 </div>
