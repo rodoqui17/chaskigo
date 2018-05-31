@@ -49,22 +49,15 @@
                   <input type="email" id="mail" class="form-control form-control-lg" placeholder="Ingresa tu email para descargar la aplicación...">
                 </div>
                 <div class="col-12 col-md-3">
-                                            <button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
 <p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
 
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
-</script>
-                  <button type="submit" value="send" class="btn btn-block btn-lg btn-primary" onclick="mensaje(id)">Enviar</button>
-                                                                                                                   
+
+                  <button class="btn btn-block btn-lg btn-primary" onclick="mensaje(mail)">Enviar</button>
+                                                                                                                  
                   <script>
-                  function mensaje(id){
-                  alert("mensaje enviado por "+ id);
+                  function mensaje(){
+                  alert("mensaje enviado por ");
+                  alert("mensaje enviado por " document.getElementById("mail").innerHTML);
                   }
                   </script>
                 </div>
