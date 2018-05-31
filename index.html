@@ -52,7 +52,9 @@
                   <button class="btn btn-block btn-lg btn-primary" onclick="myFunction()">Click me</button>                                                        
                   <script>
                   function myFunction(){
-                  alert("mensaje enviado por ");
+                   var dato = document.getElementById("mail").innerHTML;
+                  alert("tu correo fue registrado, en instantes de enviaremos el link de descarga Saludos !" + dato);
+                   
                   }
                   </script>
                 </div>
