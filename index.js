@@ -56,7 +56,8 @@ restService.use(bodyParser.json());
 
 restService.get('/formulario',function(req,res){
 	//res.redirect('https://goo.gl/forms/fLjEg67W4yZ6As7q2');
-	res.redirect('https://aswtwech.typeform.com/to/oYuInO');
+	//res.redirect('https://aswtwech.typeform.com/to/oYuInO');
+	res.redirect('https://chaskigo.typeform.com/to/hKRmb0');
 	 });
 	 
 	 restService.get('/cuidadores',function(req,res){
