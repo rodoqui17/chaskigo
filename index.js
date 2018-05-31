@@ -19,9 +19,9 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-var EmailCtrl = require(__dirname + 'mailCtrl');
+//var EmailCtrl = require(__dirname + 'mailCtrl');
 //email route
-restService.post('/emailsend', EmailCtrl.sendEmail);
+//restService.post('/emailsend', EmailCtrl.sendEmail);
 
 
 const connection = mysql.createConnection({
