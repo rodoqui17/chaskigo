@@ -19,7 +19,9 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-
+var EmailCtrl = require('./chaskigo/mailCtrl');
+//email route
+router.post('/email', EmailCtrl.sendEmail);
 
 
 const connection = mysql.createConnection({
